@@ -1,0 +1,199 @@
+/* CLEAN CODE */
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* PHẦN BODY */
+body{
+    width: 1440px;
+    margin: auto;
+}
+
+/* PHẦN BANNER */
+.banner{
+    height: 650px;
+    width: 1408px;
+    margin-bottom: 16px;
+}
+
+/* PHẦN HEADER */
+header{
+    text-align: center;
+}
+
+/* LOGO */
+header img{
+    margin-bottom: 71px;
+}
+
+/* MENU */
+nav a{
+    text-decoration: none;
+    color: #000000;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* MENU KHI HOVER */
+nav a:hover{
+    border-top: 1px solid #000000;
+    padding-top: 35px;
+    color: #ff0000;
+}
+
+/* TIN THỨ NHẤT */
+.content1{
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 9px;
+    align-items: center;
+}
+
+/* NỘI DUNG THỨ NHẤT BÊN TRÁI */
+.content1-left{
+    width: 688px;
+    height: 277px;
+    margin-right: 32px;
+}
+
+.content1-left-caption{
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content1-left-title{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.content1-left-button{
+    width: 145px;
+    height: 55px;
+    background: #FFA800;
+    color: #ffffff;
+    border: 5px solid #FFA800;
+}
+
+/* TIN THỨ NHẤT BÊN PHẢI */
+.content1-right{
+    height: 800px;
+    width: 688px
+}
+
+/* ZOOM ẢNH KHI HOVER VÀO TIN THỨ NHẤT BÊN PHẢI */
+.content1-right:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+/* THẺ TIÊU ĐỀ NỘI DUNG 2 */
+h3{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    margin-bottom: 64px;
+}
+
+.content2{
+    display: flex;
+}
+
+.content2 img{
+    width: 448px;
+    height: 546px;
+    margin-right: 32px;
+}
+
+/* PHẦN BỊ ẨN, KHI HOVER VÀO ẢNH SẼ XUẤT HIỆN RA */
+.showinfo {
+    position: absolute; /* PHẦN CON */
+    bottom: 0;
+    display: none;
+    background: #fff;
+    width: 448px;
+    height: 150px;
+    text-align: center;
+    line-height: 16px;
+}
+
+.showinfo-caption{
+    padding: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.showinfo-price{
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.showinfo-button{
+    font-size: 20px;
+    width: 448px;
+    height: 50px;
+    background: #2C2C2C;
+    color: #ffffff;
+}
+
+/* TIN THỨ 2 */
+.content2-1{
+    position: relative; /* PHẦN CHA */
+}
+
+/* ẢNH KHI HOVER */
+.img-hover:hover{
+    opacity: 0.5; /* GIẢM OPACITY ẢNH */
+    transform: scale(1.1); /*  ZOOM ẢNH KHI HOVER*/
+    transition: all 1s; /* ĐỘ MƯỢT */
+}
+
+/* ANIMATION - XUẤT HIỆN NỘI DUNG BỊ ẨN TỪ DƯỚI LÊN TRÊN KHI HOVER*/
+@keyframes move{
+    from{bottom: 0;}
+    to{bottom: 200px;}
+}
+.content2-1:hover .showinfo{
+    display:block; /* XUẤT HIỆN NỘI DUNG BỊ ẨN */
+    animation: move 1.5s ease infinite alternate; /* HIỆU ỨNG ANIMATION */
+}
+
+/* FOOTER */
+footer{
+    width: 1408px;
+    height: 100px;
+    background: #021A34;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+}
+footer p{
+    color: #ffffff;
+    margin-left: 35px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+footer input{
+    height: 52px;
+    width: 280px;
+    padding: 15px;
+    color: #ffffff;
+    background: #021A34;
+    border: 1px solid #FFA800;
+}
+footer button{
+    height: 52px;
+    width: 80px;
+    background: #FFA800;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-left: 16px;
+    margin-right: 22px;
+}
